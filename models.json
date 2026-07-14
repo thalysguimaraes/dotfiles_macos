@@ -1,0 +1,12 @@
+{
+  "providers": {
+    "anthropic": {
+      "name": "Anthropic via Meridian",
+      "baseUrl": "http://127.0.0.1:3456",
+      "apiKey": "x",
+      "headers": {
+        "x-meridian-agent": "pi"
+      }
+    }
+  }
+}

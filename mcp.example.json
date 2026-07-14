@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "toolPrefix": "mcp",
+    "requestTimeoutMs": 30000,
+    "maxRetries": 5
+  },
+  "mcpServers": {
+    "figma": {
+      "transport": "streamable-http",
+      "url": "https://mcp.figma.com/mcp",
+      "lifecycle": "lazy",
+      "requestTimeoutMs": 60000,
+      "auth": {
+        "type": "oauth"
+      }
+    },
+    "figma-console": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "figma-console-mcp@latest"
+      ],
+      "env": {
+        "FIGMA_ACCESS_TOKEN": "YOUR_FIGMA_ACCESS_TOKEN",
+        "ENABLE_MCP_APPS": "true"
+      },
+      "lifecycle": "lazy",
+      "requestTimeoutMs": 180000
+    },
+    "paper": {
+      "transport": "streamable-http",
+      "url": "http://127.0.0.1:29979/mcp",
+      "lifecycle": "lazy",
+      "requestTimeoutMs": 60000
+    },
+    "linear": {
+      "transport": "streamable-http",
+      "url": "https://mcp.linear.app/mcp",
+      "lifecycle": "lazy",
+      "requestTimeoutMs": 60000,
+      "auth": {
+        "type": "oauth"
+      }
+    }
+  }
+}

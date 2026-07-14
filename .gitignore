@@ -4,3 +4,15 @@ openstack
 *.pyc
 remote-fabric/.coverage
 remote-fabric/.test-state/
+
+# Pi credentials and local state
+**/auth.json
+**/secrets/
+**/sessions/
+**/trust.json
+**/mcp.json
+**/*.bak-*
+
+# Dependencies and generated files
+**/node_modules/
+.DS_Store
