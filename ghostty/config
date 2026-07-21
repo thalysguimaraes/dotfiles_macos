@@ -46,6 +46,13 @@ theme = argonaut
 quit-after-last-window-closed = false
 window-padding-x = 45
 window-padding-y = 20
+
+# Primary coding font
+font-family = MonoLisaCode
+font-family-bold = MonoLisaCode
+font-family-italic = MonoLisaCode
+font-family-bold-italic = MonoLisaCode
+font-size = 13
 #window-padding-color = extend
 #window-padding-balance = true
 #background-opacity = 0.75

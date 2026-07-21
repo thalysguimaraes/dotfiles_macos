@@ -1,8 +1,6 @@
 [general]
-ipc_socket=false
-import = [
-    "~/.config/alacritty/themes/themes/solarized_osaka.toml"
-]
+ipc_socket = false
+import = ["~/.config/alacritty/themes/themes/solarized_osaka.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -36,10 +34,12 @@ regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:
 history = 100000
 
 [font]
-#normal.family = "Menlo"
+normal = { family = "MonoLisaCode", style = "Regular" }
+bold = { family = "MonoLisaCode", style = "Bold" }
+italic = { family = "MonoLisaCode", style = "Italic" }
+bold_italic = { family = "MonoLisaCode", style = "Bold Italic" }
 
-size=18
-
+size = 18
 
 
 #theme 

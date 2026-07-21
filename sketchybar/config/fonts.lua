@@ -1,8 +1,8 @@
 local dimens <const> = require("config.dimens")
 
 return {
-  text = "SpaceMono Nerd Font",
-  numbers = "SpaceMono Nerd Font",
+  text = "MonoLisaCode",
+  numbers = "MonoLisaCode",
   icons = function(size)
     local font = "sketchybar-app-font:Regular"
     return size and font .. ":" .. size or font .. ":" .. dimens.text.icon
