@@ -4,7 +4,7 @@ sbar.default({
   updates = "when_shown",
   icon = {
     font = {
-      family = settings.fonts.text,
+      family = settings.fonts.icon,
       style = settings.fonts.styles.regular,
       size = settings.dimens.text.icon,
     },
@@ -15,7 +15,7 @@ sbar.default({
   label = {
     font = {
       family = settings.fonts.text,
-      style = settings.fonts.styles.regular,
+      style = settings.fonts.styles.medium,
       size = settings.dimens.text.label,
     },
     color = settings.colors.white,
@@ -54,7 +54,7 @@ sbar.default({
     },
     knob = {
       font = {
-        family = settings.fonts.text,
+        family = settings.fonts.icon,
         style = settings.fonts.styles.regular,
         size = 32,
       },

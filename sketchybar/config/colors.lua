@@ -28,6 +28,7 @@ local colors <const> = {
   },
   bg1 = 0xd322212c,
   bg2 = 0xff302c45,
+  space_active = 0xffAEA99B,
 
   with_alpha = function(color, alpha)
     if alpha > 1.0 or alpha < 0.0 then return color end

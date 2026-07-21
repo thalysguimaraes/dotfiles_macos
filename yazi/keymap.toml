@@ -1,0 +1,32 @@
+# Yazi keymap — overlays on top of defaults
+# Cheatsheet: hjkl move · Enter open · q quit · y/x/p copy/cut/paste
+# Space select · a create · d delete · r rename · / search · cd: gd
+
+[[mgr.prepend_keymap]]
+on   = "<Esc>"
+run  = "escape"
+desc = "Cancel current action / clear selection"
+
+# Quick reveal in macOS Finder (Ctrl+R, since `r` is rename)
+[[mgr.prepend_keymap]]
+on   = ["<C-r>"]
+run  = 'shell --confirm "open -R \"$0\""'
+desc = "Reveal in Finder"
+
+# Open in a new Ghostty tab as a shell at the hovered dir
+[[mgr.prepend_keymap]]
+on   = ["<C-t>"]
+run  = 'shell --confirm --orphan "open -a Ghostty \"$0\""'
+desc = "Open Ghostty here"
+
+# `o` → open with system default (in addition to <Enter>)
+[[mgr.prepend_keymap]]
+on   = "o"
+run  = "open"
+desc = "Open with system default"
+
+# `E` → edit with $EDITOR (nvim per opener config)
+[[mgr.prepend_keymap]]
+on   = "E"
+run  = "open --interactive"
+desc = "Choose opener"

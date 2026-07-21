@@ -41,36 +41,30 @@
 # # which is explained in the docs for that config option.
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
-macos-titlebar-style = hidden
-theme = argonaut
-quit-after-last-window-closed = false
+
+
+quit-after-last-window-closed = true
+quick-terminal-animation-duration = .2
 window-padding-x = 45
 window-padding-y = 20
-
-# Primary coding font
+window-padding-color = extend
+window-padding-balance = true
+background-opacity = 0.85
+background-blur-radius = 40
+window-inherit-working-directory = true
+confirm-close-surface = false
+resize-overlay = never
+scrollback-limit = 4294967295
+macos-titlebar-style = transparent
+theme = Cursor Dark
 font-family = MonoLisaCode
 font-family-bold = MonoLisaCode
 font-family-italic = MonoLisaCode
 font-family-bold-italic = MonoLisaCode
-font-size = 13
-#window-padding-color = extend
-#window-padding-balance = true
-#background-opacity = 0.75
-#window-padding-balance = false
+font-size = 12.5
+unfocused-split-opacity = 0.55
 
-
-
-##background = 192019
-window-inherit-working-directory = false
-confirm-close-surface = false
-resize-overlay = never
-scrollback-limit = 4294967295
-macos-auto-secure-input = false
-
-macos-hidden = always
-initial-window = false
-keybind = global:cmd+grave_accent=toggle_quick_terminal
-background-opacity = 0.7
-background-blur = 1
-quick-terminal-animation-duration = 0.1
-quick-terminal-size = 35%
+# Make Ghostty's Cmd+D / Cmd+Shift+D drive tmux splits:
+# \x01 is Ctrl+A (your tmux prefix), then "d" / "D"
+keybind = cmd+d=text:\x01d
+keybind = cmd+shift+d=text:\x01D

@@ -9,6 +9,9 @@ require("constants")
 require("config")
 require("bar")
 require("default")
+
+package.loaded["items"] = nil
+package.loaded["items.spaces"] = nil
 require("items")
 
 sbar.end_config()
